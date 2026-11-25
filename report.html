@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>流程與紀錄｜FUJIFILM X-T30 III 新手教學</title>
+  <style>
+    :root{--ink:#17212b;--muted:#5f6b76;--paper:#f4f1e9;--card:#fffdf8;--accent:#d94f36;--line:#d8d1c3;--dark:#18242e}
+    *{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif;line-height:1.75}
+    header{background:var(--dark);color:white;padding:22px 6vw;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+    header strong{letter-spacing:.08em} nav a{color:white;text-decoration:none;margin-left:18px;opacity:.85} nav a:hover{opacity:1}
+    main{width:min(980px,90vw);margin:48px auto 72px} .eyebrow{color:var(--accent);font-weight:800;letter-spacing:.15em;font-size:.85rem}
+    h1{font-size:clamp(2rem,5vw,4rem);line-height:1.15;margin:.3em 0} h2{margin-top:2.2em;font-size:1.55rem}
+    .lead{font-size:1.1rem;color:var(--muted);max-width:760px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;margin:18px 0;box-shadow:0 8px 24px rgba(35,39,42,.05)}
+    .flow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;align-items:center;margin-top:20px}.step{background:var(--dark);color:white;border-radius:14px;padding:18px 12px;text-align:center;font-weight:700;min-height:92px;display:grid;place-items:center}.arrow{text-align:center;color:var(--accent);font-size:1.5rem;font-weight:900}
+    .loop{border-left:5px solid var(--accent)} ul{padding-left:1.3em}.tag{display:inline-block;background:#f8ded8;color:#a52f1e;border-radius:999px;padding:3px 11px;font-size:.86rem;font-weight:700;margin-right:6px}
+    table{width:100%;border-collapse:collapse;margin-top:10px} th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line);vertical-align:top} th{color:var(--muted);font-size:.9rem}
+    footer{text-align:center;color:var(--muted);padding:32px}
+    @media(max-width:760px){.flow{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}header nav a{margin:0 14px 0 0}.card{padding:20px}table{font-size:.9rem}}
+  </style>
+</head>
+<body>
+<header>
+  <strong>X-T30 III / PROJECT LOG</strong>
+  <nav><a href="index.html">教學簡報</a><a href="wiki.html">瀏覽 Wiki</a></nav>
+</header>
+<main>
+  <p class="eyebrow">WORKFLOW · CHECK · REFLECTION</p>
+  <h1>流程與紀錄</h1>
+  <p class="lead">本頁說明如何把 FUJIFILM 官方資料整理成新手 Wiki，再轉換成可實際瀏覽的教學型 HTML 簡報，並記錄檢查與修正過程。</p>
+
+  <section class="card">
+    <span class="tag">Graph</span><span class="tag">Loop</span>
+    <h2>整體流程</h2>
+    <div class="flow">
+      <div class="step">取得官方資料</div><div class="arrow">→</div>
+      <div class="step">分類與整理</div><div class="arrow">→</div>
+      <div class="step">建立 Wiki</div><div class="arrow">→</div>
+      <div class="step">內容與格式檢查</div><div class="arrow">→</div>
+      <div class="step">生成 HTML 簡報</div>
+    </div>
+    <p class="loop"><strong>修正迴圈：</strong>若檢查發現內容錯誤、資訊不足、術語不一致或連結失效，就回到「分類與整理」或「建立 Wiki」修改，再重新檢查及產生簡報。</p>
+  </section>
+
+  <section class="card">
+    <h2>資料如何取得與整理</h2>
+    <ul>
+      <li>以 FUJIFILM 官方產品資訊與操作資料為主要來源，避免使用未確認的規格。</li>
+      <li>將資料分成六類：產品概覽、機身與轉盤、攝影基礎、拍攝模式、自動對焦、底片模擬。</li>
+      <li>把專業術語改寫成初學者能理解的說法，同時保留正確名稱。</li>
+      <li>依照「第一次拿到相機」的學習順序重新排列內容，而不是照原始資料順序堆放。</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>一次實際執行與檢查紀錄</h2>
+    <table>
+      <thead><tr><th>檢查項目</th><th>發現的問題</th><th>修正方式</th></tr></thead>
+      <tbody>
+        <tr><td>內容結構</td><td>原始資料分散，新手不易判斷閱讀順序。</td><td>先說明 AUTO，再介紹曝光、模式、對焦與底片模擬。</td></tr>
+        <tr><td>資訊密度</td><td>部分頁面術語太多，容易造成負擔。</td><td>每張投影片只保留一個核心概念，並加入實際操作提醒。</td></tr>
+        <tr><td>頁面功能</td><td>需確認翻頁按鈕與頁數顯示正常。</td><td>逐頁測試上一頁、下一頁及行動裝置版面。</td></tr>
+        <tr><td>網站連結</td><td>流程頁原先缺少 report.html，開啟時顯示 404。</td><td>補上本頁並重新透過 GitHub Pages 發布。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>反思</h2>
+    <p><strong>最常出錯的節點是「內容與格式檢查」。</strong>即使資料來源正確，整理後仍可能出現重複、缺漏或不適合初學者的順序；HTML 也可能因檔名或連結錯誤而無法開啟。</p>
+    <p>因此我把檢查提前到生成簡報之前，先確認資料分類、術語與教學順序，再輸出 HTML；完成後再逐頁測試功能與連結。若發現問題，就回到對應步驟修改，而不是只修正最後畫面。這個設計可以降低錯誤累積，也方便日後增加鏡頭、選單設定或更多拍攝情境。</p>
+  </section>
+</main>
+<footer>FUJIFILM X-T30 III 新手教學 Wiki · Workflow Report</footer>
+</body>
+</html>
